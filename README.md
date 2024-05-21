@@ -56,6 +56,14 @@ Konfigurujemy `.env` :
 DATABASE_URL="mysql://root@127.0.0.1:3306/dualmedia?charset=utf8mb4"
 ```
 
+Należy utworzyć bazę danych `dualmedia`:
+
+`symfony console doctrine:database:create`
+
+a następnie wprowadzić migrację:
+
+`symfony console doctrine:migrations:migrate`
+
 ## Kontrolery
 
 Tworzymy kontrolery dla utworzonych encji:
